@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-ivory: #F3F0E8;
+    --color-charcoal: #252722;
+    --color-olive: #737B55;
+    --color-forest: #263B30;
+    --color-terracotta: #B96F52;
+    --color-softgrey: #D9D7CE;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-ivory text-charcoal font-body transition-colors duration-300;
+  }
+
+  .dark body {
+    @apply bg-charcoal text-ivory;
+  }
+
+  ::selection {
+    @apply bg-terracotta/30 text-charcoal;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-softgrey;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-olive rounded-full;
+  }
+}
+
+@layer components {
+  /* Section container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 md:px-12 lg:px-16;
+  }
+
+  /* Section label */
+  .section-label {
+    @apply font-mono text-xs tracking-[0.2em] uppercase text-olive mb-4;
+  }
+
+  /* Section heading */
+  .section-heading {
+    @apply font-display text-4xl md:text-5xl font-medium text-charcoal dark:text-ivory leading-tight;
+  }
+
+  /* Divider line */
+  .divider {
+    @apply w-12 h-px bg-terracotta my-6;
+  }
+
+  /* Tech tag */
+  .tech-tag {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 font-mono text-xs 
+           border border-softgrey dark:border-olive/40 text-charcoal dark:text-ivory/80
+           hover:border-terracotta hover:text-terracotta transition-colors duration-200 cursor-default;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-charcoal dark:bg-ivory 
+           text-ivory dark:text-charcoal font-body font-medium text-sm
+           hover:bg-forest dark:hover:bg-softgrey transition-colors duration-200;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-charcoal dark:border-ivory/60
+           text-charcoal dark:text-ivory font-body font-medium text-sm
+           hover:bg-charcoal hover:text-ivory dark:hover:bg-ivory dark:hover:text-charcoal 
+           transition-all duration-200;
+  }
+
+  /* Ghost button */
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-olive
+           hover:text-terracotta transition-colors duration-200;
+  }
+
+  /* Card */
+  .card {
+    @apply bg-white dark:bg-charcoal/60 border border-softgrey dark:border-olive/20 p-6;
+  }
+
+  /* Project card */
+  .project-card {
+    @apply bg-ivory dark:bg-forest/20 border border-softgrey dark:border-olive/20 
+           hover:border-terracotta/50 transition-all duration-300 overflow-hidden;
+  }
+
+  /* Navigation link */
+  .nav-link {
+    @apply font-body text-sm font-medium text-charcoal/70 dark:text-ivory/60
+           hover:text-charcoal dark:hover:text-ivory transition-colors duration-200
+           relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px 
+           after:bg-terracotta after:transition-all after:duration-200
+           hover:after:w-full;
+  }
+
+  .nav-link.active {
+    @apply text-charcoal dark:text-ivory after:w-full;
+  }
+}
+
+@layer utilities {
+  /* Scroll reveal */
+  .reveal {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+
+  .reveal.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Stagger children */
+  .stagger-children > * {
+    @apply reveal;
+  }
+
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Clip path diagonal */
+  .clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  /* Border left accent */
+  .border-l-accent {
+    @apply border-l-2 border-terracotta pl-4;
+  }
+
+  /* Availability indicator */
+  .availability-open {
+    @apply bg-green-500;
+  }
+  .availability-limited {
+    @apply bg-amber-400;
+  }
+  .availability-closed {
+    @apply bg-red-400;
+  }
+}
+
+/* Dark mode overrides */
+.dark {
+  color-scheme: dark;
+}
+
+.dark .section-heading {
+  color: #F3F0E8;
+}
+
+/* Timeline */
+.timeline-line {
+  @apply absolute left-6 top-0 bottom-0 w-px bg-softgrey dark:bg-olive/30;
+}
+
+.timeline-dot {
+  @apply absolute left-6 w-3 h-3 rounded-full bg-terracotta border-2 border-ivory 
+         dark:border-charcoal transform -translate-x-1.5;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  @apply fixed inset-0 z-50 bg-black/90 flex items-center justify-center;
+}
+
+/* Filter button */
+.filter-btn {
+  @apply px-4 py-2 font-mono text-xs tracking-widest uppercase border transition-all duration-200;
+}
+
+.filter-btn.active {
+  @apply bg-charcoal dark:bg-ivory text-ivory dark:text-charcoal border-charcoal dark:border-ivory;
+}
+
+.filter-btn:not(.active) {
+  @apply border-softgrey dark:border-olive/40 text-charcoal/60 dark:text-ivory/50
+         hover:border-charcoal dark:hover:border-ivory hover:text-charcoal dark:hover:text-ivory;
+}
+
+/* Stat counter */
+.stat-number {
+  @apply font-display text-5xl md:text-6xl font-medium text-terracotta;
+}
+
+.stat-label {
+  @apply font-body text-sm text-olive mt-1 leading-snug;
+}
+
+.stat-context {
+  @apply font-mono text-xs text-softgrey dark:text-olive/50 mt-0.5;
+}

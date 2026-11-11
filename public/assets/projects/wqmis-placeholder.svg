@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <rect width="600" height="300" fill="#1a3340"/>
+  <circle cx="200" cy="150" r="80" fill="#737B55" opacity="0.2"/>
+  <circle cx="200" cy="150" r="50" fill="#263B30" opacity="0.5"/>
+  <rect x="320" y="60" width="240" height="40" rx="2" fill="#B96F52" opacity="0.3"/>
+  <rect x="320" y="110" width="180" height="40" rx="2" fill="#737B55" opacity="0.25"/>
+  <rect x="320" y="160" width="210" height="40" rx="2" fill="#737B55" opacity="0.2"/>
+  <rect x="320" y="210" width="150" height="40" rx="2" fill="#737B55" opacity="0.15"/>
+  <text x="300" y="270" font-family="Georgia, serif" font-size="12" fill="#F3F0E8" text-anchor="middle" opacity="0.4">WQMIS Water Quality Dashboard · 67,000+ Samples</text>
+</svg>

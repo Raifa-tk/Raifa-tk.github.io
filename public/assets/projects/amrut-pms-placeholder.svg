@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <rect width="600" height="300" fill="#263B30"/>
+  <rect x="40" y="40" width="200" height="120" rx="2" fill="#737B55" opacity="0.3"/>
+  <rect x="260" y="40" width="300" height="55" rx="2" fill="#B96F52" opacity="0.4"/>
+  <rect x="260" y="105" width="300" height="55" rx="2" fill="#737B55" opacity="0.3"/>
+  <rect x="40" y="180" width="520" height="80" rx="2" fill="#737B55" opacity="0.2"/>
+  <text x="300" y="155" font-family="Georgia, serif" font-size="13" fill="#F3F0E8" text-anchor="middle" opacity="0.5">AMRUT Kerala PMS Dashboard</text>
+  <text x="300" y="175" font-family="monospace" font-size="10" fill="#B96F52" text-anchor="middle" opacity="0.6">1,800+ Projects · ₹6,000+ Cr · 93 ULBs</text>
+</svg>

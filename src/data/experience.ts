@@ -1,0 +1,56 @@
+import type { Experience } from './types';
+
+export const experiences: Experience[] = [
+  {
+    id: 'erp-gulf',
+    company: 'ERP Gulf',
+    role: 'Data Analyst',
+    period: 'May 2025 – Present',
+    startDate: '2025-05-01',
+    endDate: 'present',
+    location: 'Remote / Gulf Region',
+    type: 'Full-time',
+    achievements: [
+      'Developed 100+ custom SQL Query Reports within ERPNext, supporting operational reporting across business units.',
+      'Supported ERPNext data migration across multiple DocTypes, ensuring data integrity throughout the transition.',
+      'Worked with bilingual Arabic-English automotive spare-parts data — handling encoding, transliteration and consistency validation.',
+      'Supported ERP-to-portal data integration involving approximately 5,000 automotive products.',
+      'Prepared and structured 6–7 datasets for ChangeAI, an AI-integrated chatbot initiative, including data cleaning and formatting.',
+    ],
+    tags: ['ERPNext', 'SQL', 'Data Migration', 'ETL', 'Bilingual Data'],
+  },
+  {
+    id: 'beat',
+    company: 'BEAT Centre of Excellence',
+    role: 'Data Analytics Mentor',
+    period: 'July 2025 – Present',
+    startDate: '2025-07-01',
+    endDate: 'present',
+    location: 'Kerala, India',
+    type: 'Part-time',
+    achievements: [
+      'Mentor aspiring analysts in SQL, Python, Excel and Power BI through structured technical training programmes.',
+      'Deliver hands-on instruction focused on analytical problem-solving and business reporting.',
+      'Guide students through practical projects and portfolio development, preparing them for industry roles.',
+    ],
+    tags: ['SQL', 'Python', 'Power BI', 'Excel', 'Mentorship'],
+  },
+  {
+    id: 'rows-columns',
+    company: 'Rows & Columns',
+    role: 'Data Consultant',
+    period: 'July 2024 – May 2025',
+    startDate: '2024-07-01',
+    endDate: '2025-05-01',
+    location: 'Kerala, India',
+    type: 'Full-time',
+    achievements: [
+      'Delivered 10+ interactive Power BI dashboards for client-facing analytics projects.',
+      'Performed SQL-based data extraction and transformation to support reporting workflows.',
+      'Developed automated Excel reporting solutions, reducing manual reporting effort.',
+      'Prepared P&L reports and financial performance analyses for client stakeholders.',
+      'Conducted training sessions in SQL, Excel and Power BI for client teams.',
+    ],
+    tags: ['Power BI', 'SQL', 'Excel', 'DAX', 'Consulting'],
+  },
+];
