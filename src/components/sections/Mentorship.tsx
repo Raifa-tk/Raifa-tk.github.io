@@ -26,9 +26,8 @@ export function Mentorship() {
           </div>
           <div className="lg:col-span-7 flex flex-col justify-end">
             <p className="text-base text-charcoal/70 dark:text-ivory/60 leading-relaxed">
-              As a Data Analytics Mentor at BEAT Centre of Excellence, I guide aspiring analysts through
-              structured technical training in SQL, Python, Excel and Power BI — with a focus on building
-              practical skills and portfolio-ready projects.
+              Through structured technical training in SQL, Python, Excel and Power BI, I guide aspiring
+              analysts to build practical, industry-ready skills and develop portfolio projects.
             </p>
             <p className="text-sm text-charcoal/60 dark:text-ivory/50 leading-relaxed mt-4">
               I teach analytical problem-solving from a practitioner&apos;s perspective — grounded in
@@ -71,8 +70,7 @@ export function Mentorship() {
             </h3>
             <p className="text-sm text-charcoal/60 dark:text-ivory/50 max-w-lg">
               Whether you&apos;re starting out in data analytics or looking to level up your SQL, Power BI
-              or Python skills, feel free to reach out.{' '}
-              <span className="text-olive">No student count or placement guarantees claimed.</span>
+              or Python skills, feel free to reach out.
             </p>
           </div>
           <a

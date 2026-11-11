@@ -115,7 +115,7 @@ export function Hero() {
                 GitHub
               </a>
               <a
-                href="https://raifatk.github.io/"
+                href="https://raifa-tk.github.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 font-mono text-xs text-charcoal/60 dark:text-ivory/50 hover:text-terracotta dark:hover:text-terracotta transition-colors"

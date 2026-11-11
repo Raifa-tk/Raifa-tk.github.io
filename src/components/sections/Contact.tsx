@@ -33,15 +33,6 @@ export function Contact() {
               I&apos;m always open to discussing data analytics, BI projects, ERP systems, mentorship
               or interesting data challenges. The best way to reach me is via email or LinkedIn.
             </p>
-
-            {/* Note about contact form */}
-            <div className="mt-6 p-4 border border-softgrey dark:border-olive/20 bg-ivory dark:bg-charcoal/40">
-              <p className="font-mono text-xs text-olive leading-relaxed">
-                <span className="font-medium text-charcoal dark:text-ivory">Note:</span>{' '}
-                This is a static site hosted on GitHub Pages, so a backend contact form is not
-                included. Please use email or LinkedIn for direct contact.
-              </p>
-            </div>
           </div>
 
           {/* Right: contact options */}
@@ -125,7 +116,7 @@ export function Contact() {
 
               {/* Portfolio */}
               <a
-                href="https://raifatk.github.io/"
+                href="https://raifa-tk.github.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between p-6 border border-softgrey dark:border-olive/20 hover:border-terracotta/40 transition-colors group block"
@@ -138,7 +129,7 @@ export function Contact() {
                   <div>
                     <p className="font-mono text-xs text-olive uppercase tracking-widest mb-1">Portfolio</p>
                     <p className="font-body text-base font-medium text-charcoal dark:text-ivory group-hover:text-terracotta dark:group-hover:text-terracotta transition-colors">
-                      raifatk.github.io
+                      raifa-tk.github.io
                     </p>
                   </div>
                 </div>

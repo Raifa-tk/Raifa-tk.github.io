@@ -5,8 +5,6 @@ const STATS = [
   { value: 100, suffix: '+', label: 'SQL Query Reports', context: 'built in ERPNext' },
   { value: 10, suffix: '+', label: 'Power BI Dashboards', context: 'delivered to clients' },
   { value: 5000, suffix: '+', label: 'Products Supported', context: 'automotive spare-parts data' },
-  { value: 1800, suffix: '+', label: 'Projects Monitored', context: 'AMRUT Kerala PMS' },
-  { value: 67000, suffix: '+', label: 'Water Samples', context: 'WQMIS reporting coverage' },
 ];
 
 export function About() {
@@ -48,9 +46,8 @@ export function About() {
             </p>
 
             <p className="text-base text-charcoal/70 dark:text-ivory/60 leading-relaxed">
-              Currently I&apos;m a <span className="text-charcoal dark:text-ivory font-medium">Data Analyst at ERP Gulf</span>{' '}
-              and a <span className="text-charcoal dark:text-ivory font-medium">Data Analytics Mentor at BEAT Centre of Excellence</span>.
-              Previously I worked as a Data Consultant at Rows &amp; Columns.
+              Currently I&apos;m a <span className="text-charcoal dark:text-ivory font-medium">Data Analyst at ERP Gulf</span>.
+              Previously worked as a Data Analytics Mentor at BEAT Centre of Excellence and as a Data Consultant at Rows &amp; Columns.
             </p>
 
             <p className="text-base text-charcoal/70 dark:text-ivory/60 leading-relaxed">
@@ -65,10 +62,12 @@ export function About() {
               <p className="font-mono text-xs text-olive uppercase tracking-widest">Currently</p>
               <div className="space-y-1">
                 <p className="text-sm text-charcoal dark:text-ivory font-medium">Data Analyst — ERP Gulf</p>
-                <p className="text-sm text-charcoal dark:text-ivory font-medium">Data Analytics Mentor — BEAT Centre of Excellence</p>
               </div>
               <p className="font-mono text-xs text-olive uppercase tracking-widest mt-3">Previously</p>
-              <p className="text-sm text-charcoal/70 dark:text-ivory/60">Data Consultant — Rows &amp; Columns</p>
+              <div className="space-y-1">
+                <p className="text-sm text-charcoal/80 dark:text-ivory/70">Data Analytics Mentor — BEAT Centre of Excellence (July 2025 – May 2026)</p>
+                <p className="text-sm text-charcoal/70 dark:text-ivory/60">Data Consultant — Rows &amp; Columns (July 2024 – May 2025)</p>
+              </div>
             </div>
           </div>
         </div>
@@ -76,7 +75,7 @@ export function About() {
         {/* Stats grid */}
         <div className="mt-20 pt-12 border-t border-softgrey dark:border-olive/20">
           <p className="section-label mb-8">By the Numbers</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {STATS.map(stat => (
               <StatCounter
                 key={stat.label}

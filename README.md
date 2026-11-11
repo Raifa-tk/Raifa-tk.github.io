@@ -2,7 +2,7 @@
 
 A premium, editorial-inspired portfolio website for Raifa TK — Data Analyst specialising in Business Intelligence, ERP Analytics and Data Consulting.
 
-**Live:** [raifatk.github.io](https://raifatk.github.io/)
+**Live:** [raifa-tk.github.io](https://raifa-tk.github.io/)
 
 ---
 
