@@ -13,6 +13,7 @@ export interface Project {
   myContribution: string[];
   analyticalApproach: string[];
   keyFindings: string[];
+  liveUrl?: string;
   demoUrl?: string;
   githubUrl?: string;
   imageUrl?: string;

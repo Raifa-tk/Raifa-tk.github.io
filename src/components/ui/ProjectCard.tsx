@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown, ChevronUp, ExternalLink, Github, Youtube, AlertTriangle, CheckCircle, Clock } from 'lucide-react';
+import { ChevronDown, ChevronUp, ExternalLink, Github, Youtube, AlertTriangle, CheckCircle, Clock, BarChart2 } from 'lucide-react';
 import { TechTag } from './TechTag';
 import type { Project } from '../../data/types';
 
@@ -89,7 +89,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
 
         {/* Action row */}
         <div className="flex items-center justify-between pt-4 border-t border-softgrey dark:border-olive/20">
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-xs font-mono text-terracotta hover:underline font-semibold"
+                aria-label="Live dashboard"
+              >
+                <BarChart2 size={14} />
+                Live Dashboard
+              </a>
+            )}
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
@@ -117,7 +129,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           </div>
           <button
             onClick={() => setExpanded(!expanded)}
-            className="flex items-center gap-1.5 text-xs font-mono text-olive hover:text-terracotta transition-colors"
+            className="flex items-center gap-1.5 text-xs font-mono text-olive hover:text-terracotta transition-colors flex-shrink-0"
             aria-expanded={expanded}
           >
             {expanded ? (
@@ -185,8 +197,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               </div>
             )}
 
-            {(project.demoUrl || project.githubUrl) && (
-              <div className="flex gap-4 pt-2">
+            {(project.liveUrl || project.demoUrl || project.githubUrl) && (
+              <div className="flex flex-wrap gap-3 pt-2">
+                {project.liveUrl && (
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer"
+                    className="btn-primary text-sm">
+                    <BarChart2 size={15} /> Open Live Dashboard <ExternalLink size={12} />
+                  </a>
+                )}
                 {project.demoUrl && (
                   <a href={project.demoUrl} target="_blank" rel="noopener noreferrer"
                     className="btn-secondary text-sm">

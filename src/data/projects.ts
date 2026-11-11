@@ -34,6 +34,7 @@ export const projects: Project[] = [
       'Delay risk monitoring highlights projects at risk of timeline breach, supporting proactive intervention.',
     ],
     demoUrl: 'https://youtu.be/C_s7VR_CgOw',
+    liveUrl: 'https://app.powerbi.com/view?r=eyJrIjoiY2EzNDlhM2EtYmI4NC00Yzk2LWI0ZDctODcxM2Y4MjAwOGJmIiwidCI6IjVhZmVlMDM2LWRkMDktNGZhMi05YmEzLTZhMTQzYjdkYmU1MyJ9&pageName=3e4bb2b95ce1d7de6113',
     imageUrl: '/assets/projects/amrut-pms-placeholder.svg',
   },
   {
@@ -68,6 +69,7 @@ export const projects: Project[] = [
       'Classification breakdown enables health authorities to prioritise remediation in unsafe-classified areas.',
     ],
     demoUrl: 'https://youtu.be/zRM1D0hRhKc',
+    liveUrl: 'https://app.powerbi.com/view?r=eyJrIjoiM2VjOGZiZTEtOGVlNi00ZWU3LTkxZDMtMzViYjFlMjFlODlkIiwidCI6IjVhZmVlMDM2LWRkMDktNGZhMi05YmEzLTZhMTQzYjdkYmU1MyJ9',
     imageUrl: '/assets/projects/wqmis-placeholder.svg',
   },
   {
