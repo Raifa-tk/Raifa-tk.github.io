@@ -4,7 +4,7 @@ const STATS = [
   { value: 2, suffix: '+', label: 'Years of Experience', context: 'in Data Analytics & BI' },
   { value: 100, suffix: '+', label: 'SQL Query Reports', context: 'built in ERPNext' },
   { value: 10, suffix: '+', label: 'Power BI Dashboards', context: 'delivered to clients' },
-  { value: 5000, suffix: '+', label: 'Products Supported', context: 'automotive spare-parts data' },
+  { value: 8000, suffix: '+', label: 'Products Supported', context: 'ERPNext & WooCommerce integration' },
 ];
 
 export function About() {

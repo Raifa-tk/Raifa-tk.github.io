@@ -11,6 +11,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'NumPy', level: 'experienced' },
       { name: 'Matplotlib', level: 'experienced' },
       { name: 'Seaborn', level: 'experienced' },
+      { name: 'Jupyter Notebook', level: 'experienced' },
     ],
   },
   {
@@ -20,8 +21,19 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Power BI', level: 'proficient', projectRefs: ['amrut-pms', 'wqmis', 'payment-intelligence'] },
       { name: 'DAX', level: 'proficient' },
       { name: 'Power Query', level: 'proficient' },
+      { name: 'Power BI Service & Gateway', level: 'proficient' },
       { name: 'Tableau', level: 'familiar' },
       { name: 'Advanced Excel', level: 'proficient' },
+    ],
+  },
+  {
+    id: 'power-platform',
+    label: 'Power Platform & Automation',
+    skills: [
+      { name: 'Power Apps', level: 'proficient' },
+      { name: 'Power Automate', level: 'proficient' },
+      { name: 'Microsoft Dataverse', level: 'proficient' },
+      { name: 'Workflow Automation', level: 'proficient' },
     ],
   },
   {
@@ -38,18 +50,20 @@ export const skillCategories: SkillCategory[] = [
     label: 'ERP & Data Operations',
     skills: [
       { name: 'ERPNext', level: 'proficient', projectRefs: ['erpnext-sql-reporting', 'erp-portal-integration'] },
-      { name: 'Data Migration', level: 'proficient' },
-      { name: 'ETL', level: 'experienced' },
-      { name: 'Data Cleaning', level: 'proficient' },
-      { name: 'Data Validation', level: 'proficient' },
+      { name: 'WooCommerce', level: 'experienced' },
+      { name: 'Data Migration (1M+ Records)', level: 'proficient' },
+      { name: 'ETL Pipelines', level: 'experienced' },
+      { name: 'Data Cleaning & Validation', level: 'proficient' },
+      { name: 'Financial Reconciliation', level: 'proficient' },
     ],
   },
   {
     id: 'ai-tools',
     label: 'AI Tools',
     skills: [
-      { name: 'ChatGPT', level: 'proficient' },
       { name: 'Claude AI', level: 'proficient' },
+      { name: 'ChatGPT', level: 'proficient' },
+      { name: 'AI Data Preparation', level: 'proficient' },
     ],
   },
 ];

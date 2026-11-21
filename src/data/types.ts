@@ -23,6 +23,11 @@ export interface Project {
 
 export type ProjectCategory = 'Power BI' | 'SQL' | 'ERP Analytics' | 'Data Analytics' | 'Data Engineering';
 
+export interface ExperienceCategory {
+  category: string;
+  points: string[];
+}
+
 export interface Experience {
   id: string;
   company: string;
@@ -32,6 +37,8 @@ export interface Experience {
   endDate: string | 'present';
   location: string;
   type: string;
+  summary?: string;
+  categories?: ExperienceCategory[];
   achievements: string[];
   tags: string[];
 }

@@ -12,7 +12,7 @@ export function Timeline({ experiences }: TimelineProps) {
       {/* Vertical line */}
       <div className="absolute left-6 top-2 bottom-2 w-px bg-softgrey dark:bg-olive/20" aria-hidden="true" />
 
-      <div className="space-y-10">
+      <div className="space-y-12">
         {experiences.map((exp, index) => (
           <div key={exp.id} className="relative pl-16 reveal" style={{ transitionDelay: `${index * 100}ms` }}>
             {/* Timeline dot */}
@@ -53,18 +53,46 @@ export function Timeline({ experiences }: TimelineProps) {
                 </div>
               </div>
 
-              {/* Achievements */}
-              <ul className="space-y-2 mb-4">
-                {exp.achievements.map((achievement, i) => (
-                  <li key={i} className="flex gap-2.5 text-sm text-charcoal/75 dark:text-ivory/65 leading-relaxed">
-                    <span className="mt-2 w-1 h-1 rounded-full bg-terracotta flex-shrink-0" />
-                    {achievement}
-                  </li>
-                ))}
-              </ul>
+              {/* Role Summary */}
+              {exp.summary && (
+                <p className="text-sm text-charcoal/85 dark:text-ivory/75 font-body leading-relaxed mb-4 pb-2 border-b border-softgrey/60 dark:border-olive/20">
+                  {exp.summary}
+                </p>
+              )}
+
+              {/* Categorized points if available */}
+              {exp.categories && exp.categories.length > 0 ? (
+                <div className="space-y-4 mb-5">
+                  {exp.categories.map((cat, catIdx) => (
+                    <div key={catIdx} className="space-y-2">
+                      <h4 className="font-mono text-xs uppercase tracking-wider text-olive font-semibold">
+                        {cat.category}
+                      </h4>
+                      <ul className="space-y-1.5">
+                        {cat.points.map((pt, ptIdx) => (
+                          <li key={ptIdx} className="flex gap-2.5 text-sm text-charcoal/75 dark:text-ivory/65 leading-relaxed">
+                            <span className="mt-2 w-1 h-1 rounded-full bg-terracotta flex-shrink-0" />
+                            {pt}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                /* Flat achievements list fallback */
+                <ul className="space-y-2 mb-4">
+                  {exp.achievements.map((achievement, i) => (
+                    <li key={i} className="flex gap-2.5 text-sm text-charcoal/75 dark:text-ivory/65 leading-relaxed">
+                      <span className="mt-2 w-1 h-1 rounded-full bg-terracotta flex-shrink-0" />
+                      {achievement}
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-1.5 pt-2">
                 {exp.tags.map(tag => (
                   <TechTag key={tag} name={tag} />
                 ))}
