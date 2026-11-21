@@ -67,6 +67,7 @@ export function About() {
               <div className="space-y-1">
                 <p className="text-sm text-charcoal/80 dark:text-ivory/70">Data Analytics Mentor — BEAT Centre of Excellence (July 2025 – May 2026)</p>
                 <p className="text-sm text-charcoal/70 dark:text-ivory/60">Data Consultant — Rows &amp; Columns (July 2024 – May 2025)</p>
+                <p className="text-sm text-charcoal/60 dark:text-ivory/50">IT Intern (June 2023 – Dec 2023)</p>
               </div>
             </div>
           </div>
