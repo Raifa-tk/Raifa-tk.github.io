@@ -42,7 +42,7 @@ export function Hero() {
             {/* Location */}
             <div className="flex items-center gap-1.5 font-mono text-xs text-olive mb-6">
               <MapPin size={12} />
-              Kerala, India
+              Bengaluru, Karnataka, India
             </div>
 
             {/* Main heading */}
@@ -54,17 +54,18 @@ export function Hero() {
 
             {/* Supporting text */}
             <p className="text-base md:text-lg text-charcoal/70 dark:text-ivory/60 leading-relaxed max-w-xl mb-10 font-body">
-              I&apos;m Raifa, a Data Analyst working at the intersection of{' '}
+              I&apos;m Raifa, a Data Analyst &amp; BI Analyst with 3+ years of experience working across{' '}
               <span className="text-charcoal dark:text-ivory font-medium">Business Intelligence</span>,{' '}
-              <span className="text-charcoal dark:text-ivory font-medium">ERP systems</span> and{' '}
+              <span className="text-charcoal dark:text-ivory font-medium">ERP systems</span>,{' '}
+              <span className="text-charcoal dark:text-ivory font-medium">ETL workflows</span> and{' '}
               <span className="text-charcoal dark:text-ivory font-medium">data consulting</span>.
             </p>
 
             {/* Credential pills */}
             <div className="flex flex-wrap gap-3 mb-10">
               {[
-                { label: 'Data Analyst' },
-                { label: '2+ Years Experience' },
+                { label: 'Data Analyst | BI Analyst' },
+                { label: '3+ Years Experience' },
                 { label: 'Power BI · SQL · Python · ERPNext' },
               ].map(item => (
                 <span

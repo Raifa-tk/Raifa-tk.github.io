@@ -3,12 +3,12 @@ import type { Experience } from './types';
 export const experiences: Experience[] = [
   {
     id: 'erp-gulf',
-    company: 'ERP Gulf',
+    company: 'ERP Gulf (Remote)',
     role: 'Data Analyst',
     period: 'May 2025 – Present',
     startDate: '2025-05-01',
     endDate: 'present',
-    location: 'Remote / Gulf Region',
+    location: 'Remote',
     type: 'Full-time',
     summary:
       'Working on ERP analytics, data migration, business intelligence, financial reporting and system integration using ERPNext, Python and SQL.',
@@ -16,36 +16,35 @@ export const experiences: Experience[] = [
       {
         category: 'Data Migration & Python Automation',
         points: [
-          'Executed 10+ client data migration projects involving 1M+ records across 20+ ERPNext DocTypes.',
-          'Developed client-specific Python scripts using Pandas for data cleaning, standardisation, transformation and source-to-target mapping of Arabic, English and bilingual datasets.',
-          'Automated the preparation of 500K+ historical sales invoice records, reducing manual Excel processing.',
-          'Performed post-migration validation and financial reconciliation, covering opening balances, debit-credit consistency, outstanding invoices, payment allocations and General Ledger accuracy.',
+          'Led 10+ client data migration projects covering 1M+ records across 20+ ERPNext DocTypes, ensuring data accuracy and integrity.',
+          'Built Python (Pandas) ETL scripts to clean, standardise and transform Arabic, English and bilingual datasets; automated preparation of 500K+ sales invoice records, replacing days of manual Excel work.',
+          'Performed post-migration data validation and financial reconciliation: opening balances, debit-credit consistency, outstanding invoices, payment allocations and General Ledger accuracy.',
         ],
       },
       {
         category: 'SQL Reporting & Data Analytics',
         points: [
-          'Developed 100+ custom SQL Query Reports across ERPNext modules using complex joins, aggregations and business logic.',
+          'Developed 100+ custom SQL reports across ERPNext modules using complex joins, aggregations and business logic.',
           'Worked with finance, sales, purchasing, inventory and operational data to support business reporting and decision-making.',
         ],
       },
       {
         category: 'Business Intelligence & Dashboards',
         points: [
-          'Developed ERPNext dashboards for ZATCA e-invoicing compliance, invoice statuses, reporting exceptions, sales performance, B2B/B2C metrics and VAT trends.',
+          'Built dashboards for ZATCA e-invoicing compliance, invoice status, sales performance, B2B/B2C metrics and VAT reporting.',
         ],
       },
       {
         category: 'Product Data & System Integration',
         points: [
-          'Managed 8,000+ automotive product records across ERPNext and WooCommerce, including product variations, bundles, pricing and vehicle compatibility.',
+          'Managed 8,000+ automotive product records across ERPNext and WooCommerce (variations, bundles, pricing, vehicle compatibility).',
           'Performed Arabic-English product data synchronisation and reconciliation across platforms.',
         ],
       },
       {
         category: 'AI Data Preparation',
         points: [
-          'Prepared structured Arabic-English question-and-answer datasets covering 500+ ERPNext DocTypes for ChangeAI, an AI-powered ERP assistant.',
+          'Created bilingual Arabic-English Q&A datasets covering 500+ DocTypes to train ChangeAI, an AI-powered ERP assistant.',
         ],
       },
       {
@@ -57,12 +56,12 @@ export const experiences: Experience[] = [
       },
     ],
     achievements: [
-      'Executed 10+ client data migration projects involving 1M+ records across 20+ ERPNext DocTypes.',
-      'Developed client-specific Python scripts using Pandas for data cleaning, transformation and mapping.',
-      'Developed 100+ custom SQL Query Reports across ERPNext modules.',
-      'Developed ERPNext dashboards for ZATCA e-invoicing compliance and sales performance.',
-      'Managed 8,000+ automotive product records across ERPNext and WooCommerce.',
-      'Prepared structured bilingual QA datasets for ChangeAI across 500+ DocTypes.',
+      'Led 10+ client data migration projects covering 1M+ records across 20+ ERPNext DocTypes.',
+      'Built Python (Pandas) ETL scripts automating 500K+ invoice preparation.',
+      'Developed 100+ custom SQL reports across ERPNext modules.',
+      'Built ZATCA e-invoicing compliance dashboards and B2B/B2C metrics.',
+      'Managed 8,000+ automotive products across ERPNext and WooCommerce.',
+      'Created bilingual Arabic-English Q&A datasets for ChangeAI across 500+ DocTypes.',
     ],
     tags: [
       'Python',
@@ -81,8 +80,8 @@ export const experiences: Experience[] = [
     id: 'rows-columns',
     company: 'Rows & Columns',
     role: 'Data Consultant',
-    period: 'July 2024 – May 2025',
-    startDate: '2024-07-01',
+    period: 'January 2024 – May 2025',
+    startDate: '2024-01-01',
     endDate: '2025-05-01',
     location: 'Kerala, India',
     type: 'Full-time',
@@ -92,25 +91,24 @@ export const experiences: Experience[] = [
       {
         category: 'Power BI Development & Data Modelling',
         points: [
-          'Developed 10+ customised Power BI dashboards based on client requirements across multiple business domains.',
-          'Designed data models, established table relationships and developed SQL views, DAX measures, calculated columns and KPIs.',
-          'Used Power Query for data cleaning and transformation, reducing report preparation time from 8 hours to 2 hours (75% reduction).',
-          'Published reports through Power BI Service, configured On-premises Data Gateway and validated data connectivity, scheduled refreshes and report accuracy.',
+          'Developed 10+ customised Power BI dashboards for finance, procurement, operations and project management.',
+          'Designed data models and relationships; built SQL views, charts, DAX measures and calculated columns.',
+          'Automated data cleaning with Power Query, reducing report preparation time by 75% (8 hours to 2 hours).',
+          'Published reports on Power BI Service; configured On-premises Data Gateway and scheduled refreshes.',
         ],
       },
       {
         category: 'Government Analytics: AMRUT PMS & WQMIS',
         points: [
           'Contributed to AMRUT Project Monitoring System (PMS) reporting across 1,800+ projects, 93 Urban Local Bodies and a programme value exceeding Rs. 6,000 crore.',
-          'Supported WQMIS reporting involving 67,000+ water quality samples using SQL views, DAX calculations and Power BI dashboards.',
+          'Supported WQMIS reporting on 67,000+ water quality samples using SQL views, DAX calculations and Power BI dashboards.',
           'Performed data validation and reconciliation to ensure reporting accuracy.',
         ],
       },
       {
         category: 'Power Platform & Workflow Automation',
         points: [
-          'Independently developed Power Apps data entry applications integrated with Microsoft Dataverse.',
-          'Built Power Automate workflows and integrated application data with Power BI for automated data capture and reporting.',
+          'Built Power Apps and Dataverse data-entry apps with Power Automate workflows feeding Power BI, cutting manual processing.',
           'Reduced manual workflow processing time from 5 hours to 1 hour (80% reduction).',
         ],
       },
@@ -123,23 +121,23 @@ export const experiences: Experience[] = [
       {
         category: 'Excel Solutions & Client Consulting',
         points: [
-          'Created 15+ customised Excel templates, including data entry forms, contract trackers and operational reporting tools.',
+          'Created 15+ customised Excel templates and P&L reports, including data entry forms, contract trackers and operational tools.',
           'Gathered client requirements and translated business processes into customised dashboards and reporting solutions.',
         ],
       },
       {
         category: 'Professional Training',
         points: [
-          'Trained 50+ professionals in SQL, Power BI and Python through practical, project-oriented sessions.',
+          'Conducted analytics sessions for 50+ learning professionals in SQL, Power BI and Python.',
         ],
       },
     ],
     achievements: [
       'Developed 10+ customised Power BI dashboards across multiple business domains.',
-      'Contributed to AMRUT PMS (1,800+ projects, ₹6,000+ Cr) and WQMIS (67,000+ samples) dashboards.',
-      'Developed Power Apps data entry solutions and Power Automate workflows, cutting manual time by 80%.',
-      'Built financial P&L reporting solutions and automated Excel templates.',
-      'Trained 50+ professionals in SQL, Power BI and Python.',
+      'Contributed to AMRUT PMS (1,800+ projects, ₹6,000+ Cr) and WQMIS (67,000+ samples).',
+      'Built Power Apps and Dataverse data-entry apps with Power Automate workflows.',
+      'Reduced report preparation time by 75% with Power Query.',
+      'Conducted analytics sessions for 50+ learning professionals.',
     ],
     tags: [
       'SQL',
@@ -157,12 +155,35 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    id: 'it-intern',
+    company: 'MaverixPro Pvt. Ltd.',
+    role: 'IT Intern',
+    period: 'June 2023 – December 2023',
+    startDate: '2023-06-01',
+    endDate: '2023-12-31',
+    location: 'Kerala, India',
+    type: 'Internship',
+    achievements: [
+      'Performed data validation and website testing; identified missing, duplicate and inconsistent records.',
+      'Analysed business data and created Excel reports to organise findings and support reporting activities.',
+      'Documented testing results, identified issues and analysis findings in structured reports.',
+    ],
+    tags: [
+      'Microsoft Excel',
+      'Data Analysis',
+      'Data Validation',
+      'Website Testing',
+      'Quality Assurance',
+      'Issue Reporting',
+    ],
+  },
+  {
     id: 'beat',
     company: 'BEAT Centre of Excellence',
     role: 'Data Analytics Mentor',
-    period: 'July 2025 – May 2026',
+    period: 'July 2025 – June 2026',
     startDate: '2025-07-01',
-    endDate: '2026-05-01',
+    endDate: '2026-06-30',
     location: 'Kerala, India',
     type: 'Part-time',
     achievements: [
@@ -171,30 +192,5 @@ export const experiences: Experience[] = [
       'Guided students through practical projects and portfolio development, preparing them for industry roles.',
     ],
     tags: ['SQL', 'Python', 'Power BI', 'Excel', 'Mentorship'],
-  },
-  {
-    id: 'it-intern',
-    company: 'IT Internship',
-    role: 'IT Intern',
-    period: 'June 15, 2023 – December 15, 2023',
-    startDate: '2023-06-15',
-    endDate: '2023-12-15',
-    location: 'Kerala, India',
-    type: 'Internship',
-    achievements: [
-      'Performed manual website testing to validate functionality, identify bugs and detect data inconsistencies.',
-      'Analysed business data and created Excel reports to organise findings and support reporting activities.',
-      'Conducted data validation and cross-checked records to identify missing, duplicate and inconsistent information.',
-      'Documented testing results, identified issues and analysis findings in structured reports.',
-    ],
-    tags: [
-      'Microsoft Excel',
-      'Data Analysis',
-      'Data Validation',
-      'Manual Testing',
-      'Functional Testing',
-      'Quality Assurance',
-      'Issue Reporting',
-    ],
   },
 ];

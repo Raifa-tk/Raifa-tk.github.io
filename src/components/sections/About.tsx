@@ -1,10 +1,10 @@
 import { StatCounter } from '../ui/StatCounter';
 
 const STATS = [
-  { value: 2, suffix: '+', label: 'Years of Experience', context: 'in Data Analytics & BI' },
+  { value: 3, suffix: '+', label: 'Years of Experience', context: 'in Business Intelligence & Analytics' },
   { value: 100, suffix: '+', label: 'SQL Query Reports', context: 'built in ERPNext' },
   { value: 10, suffix: '+', label: 'Power BI Dashboards', context: 'delivered to clients' },
-  { value: 8000, suffix: '+', label: 'Products Supported', context: 'ERPNext & WooCommerce integration' },
+  { value: 8000, suffix: '+', label: 'Products Supported', context: 'across ERPNext & WooCommerce' },
 ];
 
 export function About() {
@@ -31,43 +31,42 @@ export function About() {
           {/* Right: bio */}
           <div className="lg:col-span-8 space-y-6">
             <p className="text-lg text-charcoal/80 dark:text-ivory/70 leading-relaxed font-body">
-              I'm a Data Analyst with{' '}
-              <span className="text-charcoal dark:text-ivory font-medium">2+ years of experience</span> in
-              Business Intelligence, ERP Analytics and Data Consulting. I specialise in developing
-              interactive dashboards, custom SQL reports, ERPNext data migration, data transformation
-              and bilingual Arabic-English data processing.
+              I'm a Data Analyst &amp; BI Analyst with{' '}
+              <span className="text-charcoal dark:text-ivory font-medium">3+ years of experience</span> in
+              business intelligence, SQL reporting, dashboard development, data modelling, ETL and data migration.
+              Strong in Power BI (DAX, Power Query, Row-Level Security), SQL, Python (Pandas) and Advanced Excel.
             </p>
 
             <p className="text-base text-charcoal/70 dark:text-ivory/60 leading-relaxed">
-              I work at the intersection of raw data and business decisions — taking complex operational
-              and financial datasets and transforming them into clear, actionable intelligence.
-              I&apos;ve worked across government programme monitoring, automotive ERP systems, financial
-              consulting and AI-assisted data preparation.
+              I work with stakeholders to turn business requirements into KPIs and actionable insights.
+              Over my career, I&apos;ve delivered 100+ custom SQL reports, 10+ client Power BI dashboards,
+              migrations of 1M+ records across ERP systems, and automated reporting workflows that cut manual effort.
+              I have also contributed to award-recognised government analytics projects (AMRUT PMS &amp; WQMIS).
             </p>
 
             <p className="text-base text-charcoal/70 dark:text-ivory/60 leading-relaxed">
-              Currently I&apos;m a <span className="text-charcoal dark:text-ivory font-medium">Data Analyst at ERP Gulf</span>.
-              Previously worked as a Data Analytics Mentor at BEAT Centre of Excellence and as a Data Consultant at Rows &amp; Columns.
+              Currently I&apos;m working as a <span className="text-charcoal dark:text-ivory font-medium">Data Analyst at ERP Gulf (Remote)</span>.
+              Previously, I served as a Data Consultant at Rows &amp; Columns, an IT Intern at MaverixPro Pvt. Ltd.,
+              and as a Data Analytics Mentor at BEAT Centre of Excellence.
             </p>
 
             <p className="text-base text-charcoal/70 dark:text-ivory/60 leading-relaxed">
-              I&apos;m interested in expanding into{' '}
-              <span className="text-charcoal dark:text-ivory font-medium">Data Engineering</span>,
-              scalable data pipelines and cloud data platforms — building the infrastructure that makes
-              analytics possible at scale.
+              I am currently upskilling in{' '}
+              <span className="text-charcoal dark:text-ivory font-medium">Microsoft Fabric, PySpark (Apache Spark) and Azure</span>,
+              expanding my capabilities into scalable modern cloud data platforms and big data engineering.
             </p>
 
             {/* Career highlights */}
             <div className="border-l-2 border-terracotta pl-5 mt-8 space-y-2">
               <p className="font-mono text-xs text-olive uppercase tracking-widest">Currently</p>
               <div className="space-y-1">
-                <p className="text-sm text-charcoal dark:text-ivory font-medium">Data Analyst — ERP Gulf</p>
+                <p className="text-sm text-charcoal dark:text-ivory font-medium">Data Analyst — ERP Gulf (Remote) · May 2025 – Present</p>
               </div>
-              <p className="font-mono text-xs text-olive uppercase tracking-widest mt-3">Previously</p>
+              <p className="font-mono text-xs text-olive uppercase tracking-widest mt-3">Career History</p>
               <div className="space-y-1">
-                <p className="text-sm text-charcoal/80 dark:text-ivory/70">Data Analytics Mentor — BEAT Centre of Excellence (July 2025 – May 2026)</p>
-                <p className="text-sm text-charcoal/70 dark:text-ivory/60">Data Consultant — Rows &amp; Columns (July 2024 – May 2025)</p>
-                <p className="text-sm text-charcoal/60 dark:text-ivory/50">IT Intern (June 2023 – Dec 2023)</p>
+                <p className="text-sm text-charcoal/80 dark:text-ivory/70">Data Consultant — Rows &amp; Columns · January 2024 – May 2025</p>
+                <p className="text-sm text-charcoal/75 dark:text-ivory/65">Data Analytics Mentor — BEAT Centre of Excellence · July 2025 – June 2026</p>
+                <p className="text-sm text-charcoal/65 dark:text-ivory/55">IT Intern — MaverixPro Pvt. Ltd. · June 2023 – December 2023</p>
               </div>
             </div>
           </div>

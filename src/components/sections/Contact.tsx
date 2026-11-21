@@ -1,18 +1,30 @@
 import { useState } from 'react';
-import { Mail, Linkedin, Github, Copy, Check, ExternalLink } from 'lucide-react';
+import { Mail, Linkedin, Github, Copy, Check, ExternalLink, Phone, MapPin } from 'lucide-react';
 
 const EMAIL = 'raifatpk@gmail.com';
+const PHONE = '+91 9048709663';
 
 export function Contact() {
-  const [copied, setCopied] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const [copiedPhone, setCopiedPhone] = useState(false);
 
   const copyEmail = async () => {
     try {
       await navigator.clipboard.writeText(EMAIL);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
+      setCopiedEmail(true);
+      setTimeout(() => setCopiedEmail(false), 2000);
     } catch {
-      // Fallback: select the text
+      // Fallback
+    }
+  };
+
+  const copyPhone = async () => {
+    try {
+      await navigator.clipboard.writeText(PHONE);
+      setCopiedPhone(true);
+      setTimeout(() => setCopiedPhone(false), 2000);
+    } catch {
+      // Fallback
     }
   };
 
@@ -31,8 +43,13 @@ export function Contact() {
             <div className="divider" />
             <p className="text-base text-charcoal/70 dark:text-ivory/60 leading-relaxed mt-6 max-w-md">
               I&apos;m always open to discussing data analytics, BI projects, ERP systems, mentorship
-              or interesting data challenges. The best way to reach me is via email or LinkedIn.
+              or scalable data platforms. The best way to reach me is via email, phone or LinkedIn.
             </p>
+
+            <div className="mt-8 flex items-center gap-2 font-mono text-xs text-olive">
+              <MapPin size={14} className="text-terracotta flex-shrink-0" />
+              <span>Bengaluru, Karnataka, India</span>
+            </div>
           </div>
 
           {/* Right: contact options */}
@@ -61,7 +78,38 @@ export function Contact() {
                     aria-label="Copy email address"
                     className="flex items-center gap-1.5 font-mono text-xs text-charcoal/40 dark:text-ivory/30 hover:text-terracotta transition-colors p-2"
                   >
-                    {copied ? (
+                    {copiedEmail ? (
+                      <><Check size={14} className="text-green-500" /> Copied</>
+                    ) : (
+                      <><Copy size={14} /> Copy</>
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              {/* Phone */}
+              <div className="p-6 border border-softgrey dark:border-olive/20 hover:border-terracotta/40 transition-colors group">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 flex items-center justify-center bg-forest/10 dark:bg-ivory/10 text-forest dark:text-ivory flex-shrink-0">
+                      <Phone size={18} />
+                    </div>
+                    <div>
+                      <p className="font-mono text-xs text-olive uppercase tracking-widest mb-1">Phone</p>
+                      <a
+                        href={`tel:${PHONE.replace(/\s+/g, '')}`}
+                        className="font-body text-base font-medium text-charcoal dark:text-ivory hover:text-terracotta dark:hover:text-terracotta transition-colors"
+                      >
+                        {PHONE}
+                      </a>
+                    </div>
+                  </div>
+                  <button
+                    onClick={copyPhone}
+                    aria-label="Copy phone number"
+                    className="flex items-center gap-1.5 font-mono text-xs text-charcoal/40 dark:text-ivory/30 hover:text-terracotta transition-colors p-2"
+                  >
+                    {copiedPhone ? (
                       <><Check size={14} className="text-green-500" /> Copied</>
                     ) : (
                       <><Copy size={14} /> Copy</>

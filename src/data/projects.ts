@@ -29,6 +29,7 @@ export const projects: Project[] = [
     ],
     keyFindings: [
       'Dashboard covers 1,800+ projects with ₹6,000+ Cr total project value across 93 urban local bodies.',
+      'Recognised with the National e-Governance Award 2025 and SKOCH Award (Honoree) as a team contributor.',
       'Drill-through functionality allows programme managers to navigate from district-level summaries to individual project details.',
       'Bill clearance tracking enables finance teams to monitor outstanding payments and expedite approvals.',
       'Delay risk monitoring highlights projects at risk of timeline breach, supporting proactive intervention.',
